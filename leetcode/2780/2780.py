@@ -21,16 +21,20 @@ class Solution:
             return -1
 
         nums_dominant = get_dominant(nums)
+        if nums_dominant == -1:
+            return -1
+        
+        nums_dominant_count = nums.count(nums_dominant)
+        
+        left_count, right_count = 0, nums_dominant_count
+        
+        for i in range(len(nums) - 1):
+            if nums[i] == nums_dominant:
+                left_count += 1
+            right_count = nums_dominant_count - left_count
             
-        for i in range(1, len(nums)):
-            nums1_dominant = get_dominant(nums[:i])
-            if nums1_dominant == -1:
-                continue
-            if nums1_dominant != nums_dominant:
-                continue
-            nums2_dominant = get_dominant(nums[i:])           
-            if (nums1_dominant == nums2_dominant):
-                return i - 1
+            if (left_count > ((i + 1)// 2)) and (right_count > (len(nums) - (i + 1)) // 2):
+                return i
         
         return -1
         
