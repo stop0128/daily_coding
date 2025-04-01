@@ -2,20 +2,20 @@ from typing import List
 
 class Solution:
     def mostPoints(self, questions: List[List[int]]) -> int:
-        def get_max_points(questions: List[List[int]]) -> int:
-            len_questions = len(questions)
-            points = [0] * len_questions
-            if len_questions == 0:
-                return 0
-            
-            for i in range(len_questions):
-                points[i] += questions[i][0]
-                points[i] += get_max_points(questions[questions[i][1]+i+1:])
-            
-            return max(points)
-    
-        return get_max_points(questions)
+        n = len(questions)
+        dp = [0] * (n + 1)  #문제 풀경우와 아닌경우
         
+        for i in range(n - 1, -1, -1):
+            point, brainpower = questions[i]
+            next_question = i + brainpower + 1
+            
+            if next_question < n:
+                dp[i] = max(dp[i+1], point + dp[next_question])
+            else:
+                dp[i] = max(dp[i+1], point)
+            
+        return dp[0]
+            
 if __name__ == "__main__":
     test_cases = [
         {
