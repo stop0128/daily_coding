@@ -2,6 +2,7 @@
 ### 기록
 | 풀이 날짜 | 문제 | 난이도 | 문제 출처 | 언어 |
 |:---:|:---|:---:|:---:|:---:|
+| 2025.04.02 | [2873. Maximum Value of an Ordered Triplet I](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i) | Easy | LeetCode | Python |
 | 2025.04.01 | [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Medium | LeetCode | Python |
 | 2025.04.01 | [2140. Solving Questions With Brainpower](https://leetcode.com/problems/solving-questions-with-brainpower) | Medium | LeetCode | Python |
 | 2025.03.31 | [2780. Minimum Index of a Valid Split](https://leetcode.com/problems/minimum-index-of-a-valid-split) | Medium | LeetCode | Python |
