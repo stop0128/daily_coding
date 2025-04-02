@@ -2,21 +2,16 @@ from typing import List
 
 class Solution:
     def maximumTripletValue(self, nums: List[int]) -> int:
-        n = len(nums)
-        max_value = 0
+        high, diff, ans = 0, 0, 0
         
-        for i in range(n - 2):
-            j_nums = nums[i+1:]
-            j_n = len(j_nums)
-            for j in range(j_n - 1):
-                k_nums = j_nums[j+1:]
-                k_n = len(k_nums)
-                for k in range(k_n):
-                    value = (nums[i] - j_nums[j]) * k_nums[k]
-                    if value > max_value:
-                        max_value = value
+        for num in nums:
+            ans = max(ans, diff * num)
             
-        return max_value
+            diff = max(high - num, diff)
+            
+            high = max(high, num)
+            
+        return ans
     
 if __name__ == "__main__":
     test_cases = [
