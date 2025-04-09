@@ -10,19 +10,15 @@ class Solution:
 
         half_sum_of_nums = sum_of_nums // 2
         
-        i, j = 0, 0
-        while 1:
-            sum_subset = sum(nums[i:j])
-            if sum_subset > half_sum_of_nums:
-                i += 1
-            if sum_subset < half_sum_of_nums:
-                j += 1
-            if sum_subset == half_sum_of_nums:
-                return True
-            if i > n or j > n:
-                return False
+        dp = [False] * (half_sum_of_nums + 1)
+        dp[0] = True
         
-        return False
+        for num in nums:
+            for i in range(half_sum_of_nums, num-1, -1):
+                if dp[i-num]:
+                    dp[i] = True
+        
+        return dp[half_sum_of_nums]
 
 
 if __name__ == "__main__":
