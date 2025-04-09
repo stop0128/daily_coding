@@ -2,6 +2,7 @@
 ### 기록
 | 풀이 날짜 | 문제 | 난이도 | 문제 출처 | 언어 |
 |:---:|:---|:---:|:---:|:---:|
+| 2025.04.09 | [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | LeetCode | Python 
 | 2025.04.09 | [3375. Minimum Operations to Make Array Values Equal to K](https://leetcode.com/problems/minimum-operations-to-make-array-values-equal-to-k) | Easy | LeetCode | Python 
 | 2025.04.05 | [1863. Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals) | Easy | LeetCode | Python 
 | 2025.04.05 | [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves) | Medium | LeetCode | Python 
@@ -18,4 +19,5 @@
 ### 복습 필요
 | 풀이 회수 | 문제 | 난이도 | 문제 출처 | 언어 |
 |:---:|:---|:---:|:---:|:---:|
+| 1 | [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | LeetCode | Python 
 | 1 | [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves) | Medium | LeetCode | Python 
