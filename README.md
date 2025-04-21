@@ -2,6 +2,7 @@
 ### 기록
 | 풀이 날짜 | 문제 | 난이도 | 문제 출처 | 언어 |
 |:---:|:---|:---:|:---:|:---:|
+| 2025.04.21 | [2145. Count the Hidden Sequences](https://leetcode.com/problems/count-the-hidden-sequences) | Medium | LeetCode | Python 
 | 2025.04.18 | [38. Count and Say](https://leetcode.com/problems/count-and-say) | Medium | LeetCode | Python 
 | 2025.04.17 | [2176. Count Equal and Divisible Pairs in an Array](https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array) | Easy | LeetCode | Python 
 | 2025.04.09 | [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum) | Medium | LeetCode | Python 
